@@ -10,9 +10,8 @@ elif d<e:
 else:
     print("2021 is equal to 2020")    
     
-X="hello"
-Y="world"
+X=True
+Y=False
 W=X and Y
 print(W)
-W=X or Y
-print(W)
+
