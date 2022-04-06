@@ -1,0 +1,12 @@
+Question 1 in the guidance: 
+How have new cases and total cases developed over time in Spain?
+The line number is from 78 to 102(pseudocode inclusive).
+
+Discussion:
+The same method was used in the plot of China's data.
+First, pick 'new cases' and 'total cases' out and put them into new 
+lists respectively. Second, set the x-axis and y-axis of the dot plot. 
+Additionally, use different color to mark different curves.
+The plot shows that the number of total cases in Spain increased sharply 
+from about March 8th in 2020 and the number of new cases increased from 
+2020/03/08 but decreased from about 2020/03/27. 
