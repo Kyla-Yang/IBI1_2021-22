@@ -1,16 +1,16 @@
 DNA_input = input("Please input your DNA sequenece:")
 #let users to input a DNA sequence
 import re
-#imort re function
+#import re function
 DNA_sequence = ''.join(re.findall(r'[a-zA-Z]', DNA_input))
 #extract DNA sequence and store it in a list called 'DNA_sequence'
-A_sequence = re.findall(r'A', DNA_sequence)
+A_sequence = re.findall(r'[aA]', DNA_sequence)
 #find all 'A's in DNA_sequence and store them in a list called A_sequence
-G_sequence = re.findall(r'G', DNA_sequence)
+G_sequence = re.findall(r'[gG]', DNA_sequence)
 #find all 'G's in DNA_sequence and store them in a list called G_sequence
-C_sequence = re.findall(r'C', DNA_sequence)
+C_sequence = re.findall(r'[cC]', DNA_sequence)
 #find all 'C's in DNA_sequence and store them in a list called C_sequence
-T_sequence = re.findall(r'T', DNA_sequence)
+T_sequence = re.findall(r'[tT]', DNA_sequence)
 #find all 'T's in DNA_sequence and store them in a list called T_sequence
 def f(x):
     y = x/len(DNA_sequence)
