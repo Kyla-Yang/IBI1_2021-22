@@ -2,18 +2,11 @@ Summary:
 The score for alignment in human and mouse DLX5 sequence is: 1490
 The score for alignment in human DLX5 and random sequence is: -351
 The score for alignment in mouse DLX5 and random sequence is: -348
-The percentage of identical amino acids for the comparison between human 
-and mouse DLX5 sequence is 0.9653979238754326.
-The percentage of identical amino acids for the comparison between human 
-DLX5 and random sequence is 0.02768166089965398.
-The percentage of identical amino acids for the comparison between mouse  
-DLX5 and random sequence is 0.031141868512110725.
+The percentage of identical amino acids for the comparison between human and mouse DLX5 sequence is 0.9653979238754326.
+The percentage of identical amino acids for the comparison between human DLX5 and random sequence is 0.02768166089965398.
+The percentage of identical amino acids for the comparison between mouse  DLX5 and random sequence is 0.031141868512110725.
 
-The code uses BLOSUM_62 to compare and score the similarity of amino acid 
-sequences. 
+The code uses BLOSUM_62 to compare and score the similarity of amino acid sequences. 
 To avoid difficult matrix, it was turned into dataframe by using pandas.
-From the obtained results, we can find that DLX5 sequences of human and 
-mouse have high similarity, while DLX5 sequences of human and mouse have 
-low similarity to random sequences. 
-This indicates that amino acid sequence did change to some extent in the 
-evolutionary process.
+From the obtained results, we can find that DLX5 sequences of human and mouse have high similarity, while DLX5 sequences of human and mouse have low similarity to random sequences. 
+This indicates that amino acid sequence did change to some extent in the evolutionary process.
