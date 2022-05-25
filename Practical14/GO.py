@@ -49,6 +49,7 @@ class GOHandler(xml.sax.ContentHandler):
         elif self.CurrentData == 'is_a':
             self.contents.append(content)
             self.is_a = ''.join(self.contents)
+#this method was told by my friend Zhu Hengyu
 #define a function to change all the parents in the dictinary into all the sons
 #it is obtained from https://blog.csdn.net/qq_22766903/article/details/106481917?ops_request_misc=&request_id=&biz_id=102&utm_term=python%20SAX%E8%A7%A3%E6%9E%90XML%E6%97%B6%EF%BC%8Ccharact&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-106481917.142^v10^control,157^v4^control&spm=1018.2226.3001.4187
 #when xml.sax dealing with some huge data, the content may be devided into several list. E.g. At first my is_a value of id:GO:0006816 is 070838,and it will be GO:0070838.
@@ -87,6 +88,7 @@ class GOHandler_with_translation(xml.sax.ContentHandler):
                 whethertrans= ("translation" in self.defstr) or ("Translation" in self.defstr)
                 if whethertrans == False and (self.id in With_translation_list):
                     With_translation_list.remove(self.id)
+#this method was told by my friend Zhu Hengyu
 #it is obtained from https://blog.csdn.net/qq_22766903/article/details/106481917?ops_request_misc=&request_id=&biz_id=102&utm_term=python%20SAX%E8%A7%A3%E6%9E%90XML%E6%97%B6%EF%BC%8Ccharact&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-106481917.142^v10^control,157^v4^control&spm=1018.2226.3001.4187
 #when xml.sax dealing with some huge data, the content may be devided into several list. E.g. At first my is_a value of id:GO:0006816 is 070838,but it should be GO:0070838
 #it is important to remeber removing the repeating 'id's in the list
