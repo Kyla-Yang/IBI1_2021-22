@@ -19,10 +19,12 @@ plt.show()
 n=0
 for i in range(len(marks)):
     n += 1
+#calculate the sample amount
 sum=0
 for i in marks:
     sum += i
 mean=sum/n
+#calculate the average marks
 if mean > 60:
     print("pass")
 else:
